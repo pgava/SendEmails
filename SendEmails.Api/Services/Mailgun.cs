@@ -14,7 +14,7 @@ namespace SendEmails.Api.Services
             RestClient client = new RestClient();
             client.BaseUrl = new Uri("https://api.mailgun.net/v3");
             client.Authenticator =
-            new HttpBasicAuthenticator("api", "key-73b5e60f104821e671fe90966872df07");
+            new HttpBasicAuthenticator("api", "");
             RestRequest request = new RestRequest();
             request.AddParameter("domain", "sandbox8a6724b0dd5647bcb61bbc0edc25f752.mailgun.org", ParameterType.UrlSegment);
             request.Resource = "{domain}/messages";
