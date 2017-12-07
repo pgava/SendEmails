@@ -27,7 +27,17 @@ namespace SendEmails.Infrastructure.Fake
             set;
         }
 
-        
+        public IRepository<EmailProvider> EmailProviders
+        {
+            get;
+            set;
+        }
+
+        public IRepository<EmailProviderParam> EmailProviderParams
+        {
+            get;
+            set;
+        }
 
         public void Commit()
         {

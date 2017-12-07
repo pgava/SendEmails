@@ -45,6 +45,8 @@
     <Compile Include="Data\ISendEmailsService.cs" />
     <Compile Include="Data\IRepository.cs" />
     <Compile Include="Data\IUnitOfWork.cs" />
+    <Compile Include="Models\EmailProviderParam.cs" />
+    <Compile Include="Models\EmailProvider.cs" />
     <Compile Include="Models\Email.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
