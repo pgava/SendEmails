@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Send Emails</h1>
+    <p class="lead">Go ahead and send your email.</p>
+</div>
+
+<div class="row">
+    
+    @*https://codepen.io/jaycbrf/pen/iBszr*@
+    <div class="container">
+
+        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Send Your E-Mail</legend>
+
+                <!-- Text input email to-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail To</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="emailTo" placeholder="E-Mail Address" class="form-control"  type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input email CC-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail CC</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="emailCc" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input email BCC-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-Mail BCC</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="emailBcc" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input subject-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Subject</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input name="subject" placeholder="Subject" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text input body-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Body</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="body" placeholder="Body" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</div>
+
