@@ -12,7 +12,7 @@
     @*https://codepen.io/jaycbrf/pen/iBszr*@
     <div class="container">
 
-        <form class="well form-horizontal" action="/api/values" method="post"  id="contact_form">
+        <form class="well form-horizontal" action="/api/send" method="post"  id="contact_form">
             <fieldset>
 
                 <!-- Form Name -->
@@ -79,6 +79,14 @@
                     <div class="col-md-4">
                         <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
                     </div>
+                </div>
+                
+                
+                <div class="alert alert-success" role="alert" id="success_message">
+                    <strong>Sent!</strong> Your email has been sent.
+                </div>
+                <div class="alert alert-warning" role="alert" id="error_message">
+                    <strong>Warning!</strong> Couldn't send email.
                 </div>
 
             </fieldset>

@@ -181,11 +181,15 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\SendController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IMailProvider.cs" />
+    <Compile Include="Services\SendEmailService.cs" />
+    <Compile Include="Services\MailProviderFactory.cs" />
+    <Compile Include="Services\Sendgrid.cs" />
     <Compile Include="Services\Mailgun.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +257,16 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SendEmails.Core\SendEmails.Core.csproj">
+      <Project>{5dd2aed9-591f-4234-9600-c1634339e228}</Project>
+      <Name>SendEmails.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SendEmails.Infrastructure\SendEmails.Infrastructure.csproj">
+      <Project>{a2a5f96e-a12e-4f43-9d94-9f50f69dd3dd}</Project>
+      <Name>SendEmails.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

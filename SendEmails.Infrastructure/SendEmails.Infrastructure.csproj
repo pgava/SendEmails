@@ -60,7 +60,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\SendEmailsService.cs" />
+    <Compile Include="Services\SendEmailsDataService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

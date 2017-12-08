@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendEmails.Core", "SendEmai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendEmails.Infrastructure", "SendEmails.Infrastructure\SendEmails.Infrastructure.csproj", "{A2A5F96E-A12E-4F43-9D94-9F50F69DD3DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMails.Tests", "SendMails.Tests\SendMails.Tests.csproj", "{8BC3D994-6F88-4691-A15E-940262E40954}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A2A5F96E-A12E-4F43-9D94-9F50F69DD3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2A5F96E-A12E-4F43-9D94-9F50F69DD3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2A5F96E-A12E-4F43-9D94-9F50F69DD3DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC3D994-6F88-4691-A15E-940262E40954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC3D994-6F88-4691-A15E-940262E40954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC3D994-6F88-4691-A15E-940262E40954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC3D994-6F88-4691-A15E-940262E40954}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

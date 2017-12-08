@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SendEmails.Api.Services;
+using SendEmails.Core.Models;
 
 namespace SendEmails.Api.Controllers
 {
@@ -10,8 +12,6 @@ namespace SendEmails.Api.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
             return View();
         }
     }
