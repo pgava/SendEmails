@@ -6,12 +6,16 @@ namespace SendEmails.Api.Controllers
 {
     public class SendController : ApiController
     {
+        private readonly ISendEmailService _sendEmailService;
 
+        public SendController(ISendEmailService sendEmailService)
+        {
+            _sendEmailService = sendEmailService;
+        }
         // POST api/send
         public IHttpActionResult Post([FromBody]EmailMessage message)
         {
-            var service = new SendEmailService();
-            var result = service.SendEmailMessage(message);
+            var result = _sendEmailService.SendEmailMessage(message);
 
             if (result != SendEmailService.SentOk)
             {

@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\IEntity.cs" />
-    <Compile Include="Data\ISendEmailsService.cs" />
+    <Compile Include="Data\ISendEmailDataService.cs" />
     <Compile Include="Data\IRepository.cs" />
     <Compile Include="Data\IUnitOfWork.cs" />
     <Compile Include="Models\EmailMessage.cs" />

@@ -60,7 +60,7 @@ namespace SendEmails.Api.Services
             }
             var personalzations = new SendGridData
             {
-                Personalizations = new PersonalizationFormat[]
+                Personalizations = new[]
                 {
                     new PersonalizationFormat
                     {
@@ -71,7 +71,7 @@ namespace SendEmails.Api.Services
                 {
                     Email = parameters["from"]
                 },
-                Content = new ContentFormat[]
+                Content = new[]
                 {
                     new ContentFormat
                     {
@@ -88,8 +88,6 @@ namespace SendEmails.Api.Services
     public class SendGridData
     {
         public PersonalizationFormat[] Personalizations { get; set; }
-        //public string[] Cc { get; set; }
-        //public string[] Bcc { get; set; }
         public EmailFormat From { get; set; }
         public string Subject { get; set; }
         public ContentFormat[] Content { get; set; }

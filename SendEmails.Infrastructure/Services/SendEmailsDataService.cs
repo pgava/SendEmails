@@ -5,7 +5,7 @@ using SendEmails.Core.Models;
 
 namespace SendEmails.Infrastructure.Services
 {
-    public class SendEmailDataService : ISendEmailsService
+    public class SendEmailDataService : ISendEmailDataService
     {
         private IUnitOfWork UnitOfWork { get; set; }
 
@@ -24,5 +24,10 @@ namespace SendEmails.Infrastructure.Services
             return UnitOfWork.EmailProviderParams.Find(p => p.EmailProviderId == id).ToList();
         }
 
+        public void SetEmailLog(Email email)
+        {
+            UnitOfWork.Emails.Add(email);
+            UnitOfWork.Commit();
+        }
     }
 }
