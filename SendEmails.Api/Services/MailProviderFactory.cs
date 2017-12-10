@@ -6,7 +6,7 @@ using SendEmails.Core.Models;
 
 namespace SendEmails.Api.Services
 {
-    public class MailProviderFactory
+    public class MailProviderFactory : IMailProviderFactory
     {
         public IMailProvider CreatMailProvider(string providerType, List<EmailProviderParam> parameters)
         {

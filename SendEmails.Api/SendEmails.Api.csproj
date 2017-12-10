@@ -195,6 +195,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IMailProvider.cs" />
+    <Compile Include="Services\IMailProviderFactory.cs" />
     <Compile Include="Services\ISendEmailService.cs" />
     <Compile Include="Services\SendEmailService.cs" />
     <Compile Include="Services\MailProviderFactory.cs" />

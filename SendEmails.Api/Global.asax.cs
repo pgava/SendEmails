@@ -42,6 +42,7 @@ namespace SendEmails.Api
             builder.RegisterType<SqlUnitOfWork>().As<IUnitOfWork>();
             builder.RegisterType<SendEmailDataService>().As<ISendEmailDataService>();
             builder.RegisterType<SendEmailService>().As<ISendEmailService>();
+            builder.RegisterType<MailProviderFactory>().As<IMailProviderFactory>();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();
